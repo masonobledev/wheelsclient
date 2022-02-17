@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Signup from './signup';
 import Login from './login';
-import { Button, Card } from '@material-ui/core';
+import { Button, Card } from 'antd';
 
 type LoginProps = {
 	updateToken: (newToken: string) => void;
@@ -33,7 +33,7 @@ export default class Auth extends Component < LoginProps, UserState > {
 		}
     };
 
-    render(){  /*added 'render' and wrap*/
+    render(){  
         return (
             <div className="auth">
 				<Card style={{ width: 300, marginTop: 16, marginBottom: 16 }} >
