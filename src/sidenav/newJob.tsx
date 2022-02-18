@@ -3,8 +3,8 @@ import { Form, Input, Modal } from 'antd';
 import APIURL from '../helpers/environment';
 
 type state = {
-    date: Date,
-    mileage: number,
+    //date: Date,
+    //mileage: number,
     notes: string,
 };
 
@@ -18,9 +18,9 @@ export default class NewJob extends Component<props, state> {
 	constructor(props: props) {
 		super(props);
 		this.state = {
-            date: '',
-            mileage: '',
-            number: '',
+            // date: '',
+            // mileage: ,
+            notes: '',
         };
 	}
 
@@ -30,8 +30,8 @@ export default class NewJob extends Component<props, state> {
 			method: 'POST',
 			body: JSON.stringify({
 				product: {
-                    date: this.state.date,
-                    mileage: this.state.mileage,
+                   //date: this.state.date,
+                    //mileage: this.state.mileage,
                     notes: this.state.notes,
 				}
 			}),
@@ -62,31 +62,31 @@ export default class NewJob extends Component<props, state> {
 				onCancel={this.props.closeCreate}
 			>
 				<Form>
-					<Form.Item>
+					{/* <Form.Item>
 						<Input
 							type="text"
 							name="date"
 							placeholder="date"
 							value={this.state.date}
-							onChange={(e) => this.setState({ brand: e.target.value })}
+							onChange={(e) => this.setState({ date: e.target.value })}
 						/>
-					</Form.Item>
-					<Form.Item>
+					</Form.Item> */}
+					{/* <Form.Item>
 						<Input
 							type="text"
 							placeholder="mileage"
 							value={this.state.mileage}
 							name="mileage"
-							onChange={(e) => this.setState({ profile: e.target.value })}
+							onChange={(e) => this.setState({ mileage: e.target.value })}
 						/>
-					</Form.Item>
+					</Form.Item> */}
 					<Form.Item>
 						<Input
 							type="text"
 							placeholder="notes"
 							value={this.state.notes}
 							name="notes"
-							onChange={(e) => this.setState({ shape: e.target.value })}
+							onChange={(e) => this.setState({ notes: e.target.value })}
 						/>
 					</Form.Item>
 				</Form>

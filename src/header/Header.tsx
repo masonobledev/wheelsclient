@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { AppBar, makeStyles, Toolbar } from '@material-ui/core';
+import { AppBar, Toolbar } from '@material-ui/core';
 
 type HeaderProps = {
     brand: string
-}
+};
 
 // const useStyles = makeStyles(() => ({
 //     header: {
@@ -19,7 +19,7 @@ type HeaderProps = {
 //     },
 // }));
 
-export class Header extends React.Component <HeaderProps, {}> {
+export default class Header extends React.Component <HeaderProps, {}> {
 
     render () {
         return (

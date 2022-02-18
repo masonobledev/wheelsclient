@@ -50,7 +50,7 @@ export default class Garage extends Component<AllProps, any> {
               <Card>
                 <CardHeader
                   title={`${car.make}`}
-                  subheader={` model: ${car.model}`}
+                  subheader={`model: ${car.model}`}
                 />
                 <CardContent>
                   <p>

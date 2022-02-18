@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import AppClient from './AppClient';
+import App from './App';
 
-export const Router: React.FunctionComponent<{}> = () => {
+export const AppRouter: React.FunctionComponent<{}> = () => {
     return(
+        
         <BrowserRouter>
-        <div>
-            <Route exact={true} path="/" component={AppClient} />
-        </div>
+            <div>
+                <Route exact={true} path="/" component={App} />
+            </div>
         </BrowserRouter>
     );
 };

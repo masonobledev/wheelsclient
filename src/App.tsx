@@ -1,33 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import Homepage from './homepage/Homepage';
 import Auth from './auth/Auth';
-import { Header } from './header/Header';
-import { Footer } from './footer/footer';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           WheelsClient under construction!
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-
-      
-//     </div>
-//   );
-// }
-
-// export default App;
+import 'antd/dist/antd.css';
 
 interface stateType {
   sessionToken: any;
@@ -86,14 +61,13 @@ export default class App extends Component<{}, stateType> {
   render() {
     return (
       <div>
-      <Header />
-      <Router>
+      {/* <Header brand='' /> */}
+      <BrowserRouter>
         <div className="App">{this.protectedViews()}</div>
-      </Router>
-      <Footer />
+      </BrowserRouter>
+      {/* <Footer /> */}
       </div>
     );
   }
-
-
 };
+

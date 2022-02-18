@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Signup from './signup';
 import Login from './login';
+import './Auth.css';
 import { Button, Card } from 'antd';
 
 type LoginProps = {
@@ -13,7 +14,7 @@ type UserState = {
 };
 
 export default class Auth extends Component < LoginProps, UserState > { 
-    constructor(){
+    constructor(props: LoginProps){
         super(props);
         this.state = {
             showLogin: false

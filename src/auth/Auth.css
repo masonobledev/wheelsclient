@@ -1,0 +1,9 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(55, 0, 255);
+    background-image: url();
+}
