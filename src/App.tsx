@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Homepage from './homepage/Homepage';
-import Auth from './auth/Auth';
+import Auth from './auth/auth';
 import 'antd/dist/antd.css';
 
 interface stateType {

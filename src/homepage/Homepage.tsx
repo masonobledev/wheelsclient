@@ -2,9 +2,9 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import Showroom from './Showroom';
-import Garage from './Garage';
-import Glovebox from './Glovebox';
+import Showroom from './showroom';
+import Garage from './garage';
+import Glovebox from './glovebox';
 
 type HomeProps = {
     token: string
@@ -23,7 +23,7 @@ export default class HomePage extends React.Component <HomeProps, {}> {
                             <Showroom />
                         </Box>
                         <Box>
-                            <Garage />
+                            <Garage token={this.props.token}/>
                         </Box>
                         <Box>
                             <Glovebox />

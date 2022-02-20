@@ -7,7 +7,7 @@ export const AppRouter: React.FunctionComponent<{}> = () => {
         
         <BrowserRouter>
             <div>
-                <Route exact={true} path="/" component={App} />
+                <Route path="/" element={App} />
             </div>
         </BrowserRouter>
     );
