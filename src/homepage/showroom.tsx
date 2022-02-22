@@ -1,13 +1,11 @@
 import * as React from 'react';
-//import { Component } from 'react';
 
+function Showroom (){
+  return (
+    <div>
+      <p>Start here!</p>
+    </div>
+  );
+};
 
-export default class Showroom extends React.Component {
-    render (){
-        return (
-            <div>
-                <p>Showroom!</p>
-            </div>
-        )
-    }
-}
+export default Showroom;

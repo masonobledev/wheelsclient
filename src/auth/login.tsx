@@ -40,7 +40,7 @@ export default class Login extends Component<LoginProps, State> {
         }
 
         try {
-            const res = await fetch(`${APIURL}/user/login`, {
+            const res = await fetch(`${APIURL}/auth/login`, {
                 method: "POST",
                 body: JSON.stringify(reqBody),
                 headers: {

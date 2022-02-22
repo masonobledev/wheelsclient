@@ -60,10 +60,10 @@ export default class Garage extends Component<AllProps, any> {
                   key={this.state.cars.indexOf(car)}
                 >
                   <Card>
-                    <CardHeader
+                    {/* <CardHeader
                       title={`${car.make}`}
                       subheader={`model: ${car.model}`}
-                    />
+                    /> */}
                     <CardContent>
                       <p>
                         <b>year:</b> {car.year}
