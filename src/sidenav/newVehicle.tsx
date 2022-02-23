@@ -3,7 +3,7 @@ import { Form, Input, Modal } from 'antd';
 import APIURL from '../helpers/environment';
 
 type state = {
-    year: any,
+    //year: any,
     make: string,
     model: string,
     VIN: string,
@@ -18,10 +18,10 @@ export default class newVehicle extends Component<props, state> {
 	constructor(props: props) {
 		super(props);
 		this.state = {
-            year: { value: 1900 },
+            //year: { value: 1900 },
             make: '',
             model: '',
-            VIN: '',
+            VIN: ''
 		};
 	}
 
@@ -37,7 +37,7 @@ export default class newVehicle extends Component<props, state> {
 			method: 'POST',
 			body: JSON.stringify({
 				vehicleListing: {
-                    year: this.state.year,
+                    //year: this.state.year,
                     make: this.state.make,
                     model: this.state.model,
                     VIN: this.state.VIN
@@ -70,7 +70,7 @@ export default class newVehicle extends Component<props, state> {
                 onCancel={this.props.closeCreate}
             >
                 <Form>
-                    <Form.Item>
+                    {/* <Form.Item>
                         <Input
                             type="number"
                             name="year"
@@ -78,7 +78,7 @@ export default class newVehicle extends Component<props, state> {
                             value={this.state.year}
                             onChange{(e) => this.setState({ year: e.target.value })}
                         />
-                    </Form.Item>
+                    </Form.Item> */}
                     <Form.Item>
                         <Input
                             type="text"

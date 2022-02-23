@@ -3,8 +3,8 @@ import { Form, Input, Modal } from 'antd';
 import APIURL from '../helpers/environment';
 
 type state = {
-    date: any,
-    mileage: number,
+    //date: any,
+    //mileage: number,
     notes: string,
 };
 
@@ -18,8 +18,8 @@ export default class NewJob extends Component<props, state> {
 	constructor(props: props) {
 		super(props);
 		this.state = {
-            date: '',
-            mileage: { value: 000000 },
+            //date: '',
+            //mileage: ,
             notes: '',
         };
 	}
@@ -34,8 +34,8 @@ export default class NewJob extends Component<props, state> {
 			method: 'POST',
 			body: JSON.stringify({
 				product: {
-                   	date: this.state.date,
-                    mileage: this.state.mileage,
+                   	//date: this.state.date,
+                    //mileage: this.state.mileage,
                     notes: this.state.notes,
 				}
 			}),
@@ -66,7 +66,7 @@ export default class NewJob extends Component<props, state> {
 				onCancel={this.props.closeCreate}
 			>
 				<Form>
-					<Form.Item>
+					{/* <Form.Item>
 						<Input
 							type="text"
 							name="date"
@@ -74,8 +74,8 @@ export default class NewJob extends Component<props, state> {
 							value={this.state.date}
 							onChange={(e) => this.setState({ date: e.target.value })}
 						/>
-					</Form.Item> 
-					<Form.Item>
+					</Form.Item>  */}
+					{/* <Form.Item>
 						<Input
 							type="number"
 							placeholder="mileage"
@@ -83,7 +83,7 @@ export default class NewJob extends Component<props, state> {
 							name="mileage"
 							onChange={(e) => this.setState({ mileage: e.target.value })}
 						/>
-					</Form.Item>
+					</Form.Item> */}
 					<Form.Item>
 						<Input
 							type="text"
